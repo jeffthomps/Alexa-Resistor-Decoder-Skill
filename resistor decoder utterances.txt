@@ -1,0 +1,5 @@
+BandsToValue {First} {Second} {Third} {Fourth}
+AMAZON.StopIntent done
+AMAZON.StopIntent exit
+AMAZON.StopIntent goodbye
+AMAZON.StopIntent quit
