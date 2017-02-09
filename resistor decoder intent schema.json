@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "intent": "BandsToValue",
+      "slots": [
+        {
+          "name": "First",
+          "type": "color_bands"
+        },
+        {
+          "name": "Second",
+          "type": "color_bands"
+        },
+        {
+          "name": "Third",
+          "type": "color_bands"
+        },
+        {
+          "name": "Fourth",
+          "type": "color_bands"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    }
+  ]
+}
