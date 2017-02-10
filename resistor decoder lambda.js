@@ -117,7 +117,7 @@ function getWelcomeResponse(callback) {
     var sessionAttributes = {};
     var speechOutput = "Welcome to Jeff's Resistor Decoder, what are the four colors?";
     var shouldEndSession = false;
-    var reprompt = "I'm ready for the four color bands when you are."
+    var reprompt = "I'm ready for the four color bands when you are.";
 
     callback(sessionAttributes,
         buildSpeechletResponseReprompt(reprompt, speechOutput, shouldEndSession));
@@ -127,7 +127,7 @@ function getHelpResponse(callback) {
     var sessionAttributes = {};
     var speechOutput = "Resistor helper takes four color values and returns the calculated resistance and tolerance. The provided values should be something similar to black, brown, red, gold.";
     var shouldEndSession = false;
-    var reprompt = "I'm ready for the four color bands when you are, with the tolerance band last."
+    var reprompt = "I'm ready for the four color bands when you are, with the tolerance band last.";
 
     callback(sessionAttributes,
         buildSpeechletResponseReprompt(reprompt, speechOutput, shouldEndSession));
@@ -150,7 +150,7 @@ function BandsToValue(intent, session, callback) {
     var shouldEndSession = false;
     var speechOutput = "";
     var badValue = "I'm sorry, I must've misheard. The ";
-    var badValueCont = " band isn't valid. Could you repeat the colors?"
+    var badValueCont = " band isn't valid. Could you repeat the colors?";
 
     switch(intent.slots.First.value) {
         case "black":
